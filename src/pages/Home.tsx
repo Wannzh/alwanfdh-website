@@ -10,16 +10,16 @@ import Services from "../sections/Services";
 
 export default function Home() {
     return (
-        <>
+        <div className="font-sans text-gray-800 antialiased overflow-x-hidden">
             <Navbar />
             <Hero />
-            <Problems />
+            <Problems /> {/* Strategi bagus: Masalah dulu baru solusi */}
             <Services />
             <Portofolio />
             <Pricing />
             <About />
             <Contact />
             <Footer />
-        </>
+        </div>
     )
 }
