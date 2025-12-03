@@ -7,14 +7,16 @@ import Portofolio from "../sections/Portofolio";
 import Pricing from "../sections/Pricing";
 import Problems from "../sections/Problems";
 import Services from "../sections/Services";
+import Workflow from "../sections/Workflow";
 
 export default function Home() {
     return (
-        <div className="font-sans text-gray-800 antialiased overflow-x-hidden">
+        <div className="font-sans text-gray-800 antialiased overflow-x-hidden bg-white selection:bg-blue-100 selection:text-blue-900">
             <Navbar />
             <Hero />
-            <Problems /> {/* Strategi bagus: Masalah dulu baru solusi */}
+            <Problems />
             <Services />
+            <Workflow /> 
             <Portofolio />
             <Pricing />
             <About />

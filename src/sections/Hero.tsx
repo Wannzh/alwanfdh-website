@@ -9,13 +9,14 @@ export default function Hero() {
             👋 Halo, Saya Alwan Fadhlurrohman
           </span>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-            Jasa Website Profesional<br />
+            Web Developer & <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
-              untuk UMKM & Institusi
+              System Builder
             </span>
           </h1>
           <p className="text-lg text-gray-600 max-w-lg">
-            Dibangun dengan teknologi modern & struktur rapi agar bisnis Anda tampak kredibel sejak detik pertama.
+            Saya membantu UMKM & institusi membangun website profesional 
+            yang cepat, aman, dan meningkatkan konversi penjualan Anda.
           </p>
           <div className="flex gap-4">
             <ButtonCTA href="#contact">Mulai Proyek</ButtonCTA>

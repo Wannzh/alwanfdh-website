@@ -1,28 +1,25 @@
-import SectionTitle from "../components/SectionTitle";
 import ButtonCTA from "../components/ButtonCTA";
+import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-blue-900 text-white">
-      <div className="container mx-auto px-6 text-center">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Siap Memulai Proyek Anda?</h2>
-          <p className="text-blue-200 text-lg mb-10">
-            Jangan ragu untuk berdiskusi. Konsultasi awal gratis! Saya akan membantu menemukan solusi terbaik sesuai budget Anda.
-          </p>
-          
-          <div className="flex flex-col md:flex-row justify-center gap-6">
-            <ButtonCTA href="https://wa.me/6285117072750" className="bg-green-500 hover:bg-green-600 border-none shadow-green-500/30">
-              Chat WhatsApp (0851-1707-2750)
+    <section id="contact" className="py-20 bg-gray-900 text-white relative overflow-hidden">
+      <div className="container mx-auto px-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Siap Mulai? Diskusi Langsung dengan Developernya</h2>
+          <p className="text-gray-300 mb-6">Konsultasi langsung untuk cek kebutuhan, timeline, dan estimasi biaya. Slot terbatas setiap minggu — segera pesan waktu Anda.</p>
+
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <ButtonCTA href="https://wa.me/6285117072750" className="bg-green-500 hover:bg-green-600 flex items-center justify-center gap-3 py-3 px-6">
+              <FaWhatsapp /> Hubungi via WhatsApp — Langsung Bicara dengan Developernya
             </ButtonCTA>
-            <ButtonCTA href="mailto:muhamad@alwanfdh.my.id" variant="outline" className="text-white border-white hover:bg-white hover:text-blue-900">
-              Kirim Email
+
+            <ButtonCTA href="mailto:muhamad@alwanfdh.my.id" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 flex items-center justify-center gap-3 py-3 px-6">
+              <FaEnvelope /> Kirim RFP / Pertanyaan
             </ButtonCTA>
           </div>
 
-          <p className="mt-8 text-sm text-blue-300">
-            Respon cepat pada jam kerja: Senin - Jumat (09.00 - 17.00)
-          </p>
+          <p className="text-gray-400 text-sm mt-4">Balasan biasanya dalam 24 jam kerja. Jika perlu, sebutkan deadline Anda agar prioritas dapat diatur.</p>
         </div>
       </div>
     </section>
