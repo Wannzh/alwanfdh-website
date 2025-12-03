@@ -16,6 +16,40 @@ export const translations = {
       cta_primary: "Mulai Transformasi",
       cta_secondary: "Lihat Portfolio",
     },
+    portfolio: {
+      title: "Karya Unggulan",
+      subtitle: "Beberapa proyek terpilih yang menunjukkan keahlian teknis saya.",
+      projects: [
+        {
+          title: "ZakatNow",
+          desc: "Sistem manajemen zakat terintegrasi untuk memudahkan perhitungan, pengumpulan, dan penyaluran zakat secara transparan dan efisien.",
+          tags: ["Java", "Spring Boot", "React", "MySQL"],
+          link_demo: "#",
+          link_repo: "https://github.com/wannzh/ZakatNow"
+        },
+        {
+          title: "LocoBooking API",
+          desc: "Layanan Backend API yang aman untuk sistem pemesanan tiket kereta api. Dilengkapi autentikasi JWT, RBAC, dan dokumentasi Swagger UI.",
+          tags: ["Java", "Spring Security", "PostgreSQL", "Swagger"],
+          link_demo: "#",
+          link_repo: "https://github.com/wannzh/LocoBooking"
+        },
+        {
+          title: "WanFlix",
+          desc: "Aplikasi katalog film interaktif yang menampilkan data real-time, pencarian, dan detail film menggunakan integrasi TMDB API.",
+          tags: ["React", "Tailwind CSS", "TMDB API", "Axios"],
+          link_demo: "https://wanflix.vercel.app",
+          link_repo: "https://github.com/wannzh/WanFlix"
+        },
+        {
+          title: "GedeClimb Reserve",
+          desc: "Sistem reservasi pendakian gunung berbasis CLI yang mengimplementasikan struktur data kompleks dan file handling untuk manajemen kuota.",
+          tags: ["C Language", "Data Structures", "File Handling"],
+          link_demo: "#",
+          link_repo: "https://github.com/wannzh/GedeClimb"
+        }
+      ]
+    },
     problems: {
       title: "Hambatan Digital Bisnis",
       subtitle: "Jangan biarkan masalah teknis menghambat potensi omzet Anda.",
@@ -117,6 +151,40 @@ export const translations = {
       desc: "I help you transform ideas into high-performance digital assets (websites & systems) that are secure and ready to boost revenue.",
       cta_primary: "Start Transformation",
       cta_secondary: "View Portfolio",
+    },
+    portfolio: {
+      title: "Featured Works",
+      subtitle: "Selected projects showcasing my technical expertise.",
+      projects: [
+        {
+          title: "ZakatNow",
+          desc: "Integrated zakat management system to facilitate transparent and efficient zakat calculation, collection, and distribution.",
+          tags: ["Java", "Spring Boot", "React", "MySQL"],
+          link_demo: "https://zakatnow.alwanfdh.my.id/",
+          link_repo: "https://github.com/wannzh/zakatNow-app"
+        },
+        {
+          title: "LocoBooking API",
+          desc: "Secure Backend API service for train ticket booking system. Features JWT authentication, RBAC, and comprehensive Swagger UI documentation.",
+          tags: ["Java", "Spring Security", "PostgreSQL", "Swagger"],
+          link_demo: "#",
+          link_repo: "https://github.com/wannzh/LocoBooking-API"
+        },
+        {
+          title: "WanFlix",
+          desc: "Interactive movie catalog application featuring real-time data fetching, search functionality, and movie details using TMDB API integration.",
+          tags: ["React", "Tailwind CSS", "TMDB API", "Axios"],
+          link_demo: "https://wanflix.pages.dev/",
+          link_repo: "https://github.com/Wannzh/PROJECT-WISHLIST-MOVIE"
+        },
+        {
+          title: "GedeClimb Reserve",
+          desc: "CLI-based mountain hiking reservation system implementing complex data structures and file handling for quota management.",
+          tags: ["C Language", "Data Structures", "File Handling"],
+          link_demo: "#",
+          link_repo: "https://github.com/wannzh/GedeClimb"
+        }
+      ]
     },
     problems: {
       title: "Digital Bottlenecks",
