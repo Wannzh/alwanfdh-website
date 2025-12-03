@@ -16,6 +16,16 @@ export const translations = {
       cta_primary: "Mulai Transformasi",
       cta_secondary: "Lihat Portfolio",
     },
+    problems: {
+      title: "Hambatan Digital Bisnis",
+      subtitle: "Jangan biarkan masalah teknis menghambat potensi omzet Anda.",
+      items: [
+        { title: "Performa Lambat", desc: "Website lambat menurunkan kredibilitas dan menghilangkan calon pelanggan." },
+        { title: "UX Membingungkan", desc: "Navigasi yang buruk membuat pengunjung frustrasi dan batal membeli." },
+        { title: "Tidak Terlihat", desc: "Tanpa struktur SEO yang tepat, bisnis Anda tenggelam di mesin pencari." },
+        { title: "Rawan Keamanan", desc: "Celah keamanan mempertaruhkan data pelanggan dan reputasi institusi." },
+      ]
+    },
     services: {
       title: "Solusi Terintegrasi",
       subtitle: "Pendekatan komprehensif untuk kebutuhan digital Anda.",
@@ -57,7 +67,7 @@ export const translations = {
       plans: [
         { 
           name: "Landing Page", 
-          price: "Mulai Rp 750rb", // Sedikit dinaikkan dari 700rb agar terkesan lebih premium tapi tetap terjangkau
+          price: "Mulai Rp 750rb", 
           desc: "Cocok untuk promosi produk spesifik atau kampanye iklan.",
           recommended: false,
           features: ["1 Halaman Konversi Tinggi", "SEO Dasar", "Koneksi WhatsApp", "Revisi 2x", "Gratis Hosting 1 Tahun"]
@@ -84,15 +94,11 @@ export const translations = {
       btn_wa: "Chat WhatsApp",
       btn_email: "Kirim Email"
     },
-    problems: {
-      title: "Hambatan Digital Bisnis",
-      subtitle: "Jangan biarkan masalah teknis menghambat potensi omzet Anda.",
-      items: [
-        { title: "Performa Lambat", desc: "Website lambat menurunkan kredibilitas dan menghilangkan calon pelanggan." },
-        { title: "UX Membingungkan", desc: "Navigasi yang buruk membuat pengunjung frustrasi dan batal membeli." },
-        { title: "Tidak Terlihat", desc: "Tanpa struktur SEO yang tepat, bisnis Anda tenggelam di mesin pencari." },
-        { title: "Rawan Keamanan", desc: "Celah keamanan mempertaruhkan data pelanggan dan reputasi institusi." },
-      ]
+    footer: {
+      tagline: "Membangun solusi digital berkelas untuk pertumbuhan bisnis Anda. Kualitas kode dan kepuasan klien adalah prioritas utama.",
+      nav_title: "Navigasi",
+      social_title: "Sosial Media",
+      copyright: "Hak Cipta Dilindungi."
     }
   },
   en: {
@@ -111,6 +117,16 @@ export const translations = {
       desc: "I help you transform ideas into high-performance digital assets (websites & systems) that are secure and ready to boost revenue.",
       cta_primary: "Start Transformation",
       cta_secondary: "View Portfolio",
+    },
+    problems: {
+      title: "Digital Bottlenecks",
+      subtitle: "Don't let technical issues hinder your revenue potential.",
+      items: [
+        { title: "Slow Performance", desc: "Slow websites kill credibility and drive away potential customers." },
+        { title: "Confusing UX", desc: "Poor navigation frustrates visitors and stops them from buying." },
+        { title: "Invisible", desc: "Without proper SEO structure, your business drowns in search engines." },
+        { title: "Security Risks", desc: "Security loopholes risk customer data and institutional reputation." },
+      ]
     },
     services: {
       title: "Integrated Solutions",
@@ -180,15 +196,11 @@ export const translations = {
       btn_wa: "Chat WhatsApp",
       btn_email: "Send Email"
     },
-    problems: {
-      title: "Digital Bottlenecks",
-      subtitle: "Don't let technical issues hinder your revenue potential.",
-      items: [
-        { title: "Slow Performance", desc: "Slow websites kill credibility and drive away potential customers." },
-        { title: "Confusing UX", desc: "Poor navigation frustrates visitors and stops them from buying." },
-        { title: "Invisible", desc: "Without proper SEO structure, your business drowns in search engines." },
-        { title: "Security Risks", desc: "Security loopholes risk customer data and institutional reputation." },
-      ]
+    footer: {
+      tagline: "Building world-class digital solutions for your business growth. Code quality and client satisfaction are our top priorities.",
+      nav_title: "Navigation",
+      social_title: "Social Media",
+      copyright: "All rights reserved."
     }
   }
 };

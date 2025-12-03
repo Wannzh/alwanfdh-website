@@ -5,12 +5,12 @@ import { FaBuilding, FaRocket, FaUniversity, FaLaptopCode } from "react-icons/fa
 export default function Services() {
   const { t } = useLanguage();
   
-  // Array ikon yang urutannya sesuai dengan data di translations.ts
+  // Urutan ikon ini HARUS sama dengan urutan di translations.ts
   const icons = [
-    <FaBuilding />,      // Sesuai index 0: Website Bisnis
-    <FaRocket />,        // Sesuai index 1: Landing Page
-    <FaUniversity />,    // Sesuai index 2: Sistem Informasi/Institusi
-    <FaLaptopCode />     // Sesuai index 3: Custom Web App
+    <FaBuilding />,      // Corporate Website
+    <FaRocket />,        // Landing Page
+    <FaUniversity />,    // Sistem Informasi
+    <FaLaptopCode />     // Custom App
   ];
 
   return (
@@ -20,15 +20,14 @@ export default function Services() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {t.services.items.map((service, index) => (
-            <div key={index} className="p-8 bg-white border border-gray-100 rounded-2xl hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
-              <div className="text-5xl mb-6 text-gray-300 group-hover:text-blue-600 transition-colors duration-300">
-                {/* Render ikon berdasarkan index */}
+            <div key={index} className="p-8 bg-white border border-slate-100 rounded-2xl hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+              <div className="text-5xl mb-6 text-slate-300 group-hover:text-blue-600 transition-colors duration-300">
                 {icons[index]}
               </div>
-              <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-blue-700 transition-colors">
+              <h3 className="text-xl font-bold mb-3 text-slate-900 group-hover:text-blue-700 transition-colors">
                 {service.title}
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-slate-600 text-sm leading-relaxed">
                 {service.desc}
               </p>
             </div>
