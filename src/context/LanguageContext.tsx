@@ -3,10 +3,13 @@ import { translations } from '../constants/translations';
 
 type Language = 'id' | 'en';
 
+// Definisikan tipe untuk translation object agar TypeScript tidak error
+type TranslationType = typeof translations.id;
+
 interface LanguageContextType {
   language: Language;
   toggleLanguage: () => void;
-  t: typeof translations.id;
+  t: TranslationType;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);

@@ -1,38 +1,25 @@
 import SectionTitle from "../components/SectionTitle";
 import { useLanguage } from "../context/LanguageContext";
-import { FaComments, FaCalculator, FaHandshake, FaCode, FaSyncAlt, FaRocket } from "react-icons/fa";
+import { FaComments, FaMap, FaHandshake, FaCode, FaCheckDouble, FaRocket } from "react-icons/fa";
 
 export default function Workflow() {
   const { t } = useLanguage();
-
-  const icons = [
-    <FaComments />, 
-    <FaCalculator />, 
-    <FaHandshake />, 
-    <FaCode />, 
-    <FaSyncAlt />, 
-    <FaRocket />
-  ];
+  const icons = [<FaComments />, <FaMap />, <FaHandshake />, <FaCode />, <FaCheckDouble />, <FaRocket />];
 
   return (
-    <section id="workflow" className="py-20 bg-slate-50">
+    <section id="workflow" className="py-24 bg-slate-50">
       <div className="container mx-auto px-6">
         <SectionTitle title={t.workflow.title} subtitle={t.workflow.subtitle} />
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {t.workflow.steps.map((step, index) => (
-            <div key={index} className="relative flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100">
-              {/* Number Badge */}
-              <div className="absolute -top-4 -left-4 w-10 h-10 bg-blue-600 text-white font-bold rounded-full flex items-center justify-center shadow-lg border-4 border-slate-50">
-                {index + 1}
-              </div>
-              
-              <div className="text-4xl text-blue-500 mb-4 p-4 bg-blue-50 rounded-full">
+            <div key={index} className="relative bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg transition-all hover:-translate-y-1">
+              <div className="absolute top-6 right-6 text-5xl font-black text-slate-100 -z-0 select-none">0{index + 1}</div>
+              <div className="relative z-10 text-3xl text-blue-600 mb-4 bg-blue-50 w-14 h-14 flex items-center justify-center rounded-xl">
                 {icons[index]}
               </div>
-              
-              <h3 className="text-xl font-bold text-gray-900 mb-2">{step.title}</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">{step.desc}</p>
+              <h3 className="relative z-10 text-xl font-bold text-slate-900 mb-2">{step.title}</h3>
+              <p className="relative z-10 text-slate-600 text-sm">{step.desc}</p>
             </div>
           ))}
         </div>

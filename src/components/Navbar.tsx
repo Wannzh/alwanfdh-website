@@ -16,24 +16,25 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-white/50 backdrop-blur-sm py-6'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <div className="text-2xl font-bold text-gray-900">Alwan<span className="text-blue-600">Dev</span></div>
+        <a href="#" className="text-2xl font-bold text-slate-900">Alwan<span className="text-blue-600">Dev</span></a>
         
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#about" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">{t.nav.about}</a>
-          <a href="#services" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">{t.nav.services}</a>
-          <a href="#workflow" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">{t.nav.workflow}</a>
-          <a href="#pricing" className="text-gray-600 hover:text-blue-600 font-medium transition-colors">{t.nav.pricing}</a>
+          {[
+            ['about', t.nav.about],
+            ['services', t.nav.services],
+            ['workflow', t.nav.workflow],
+            ['portfolio', t.nav.portfolio],
+          ].map(([key, label]) => (
+            <a key={key} href={`#${key}`} className="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm uppercase tracking-wide">
+              {label}
+            </a>
+          ))}
           
-          {/* Language Toggle */}
-          <button 
-            onClick={toggleLanguage}
-            className="flex items-center gap-2 px-3 py-1 rounded-full border border-gray-300 hover:border-blue-500 hover:text-blue-600 transition-all text-sm font-medium"
-          >
-            <FaGlobe />
-            {language === 'id' ? 'EN' : 'ID'}
+          <button onClick={toggleLanguage} className="flex items-center gap-2 px-3 py-1 rounded-full border border-slate-300 hover:border-blue-500 text-slate-600 text-xs font-bold cursor-pointer">
+            <FaGlobe /> {language.toUpperCase()}
           </button>
 
-          <ButtonCTA href="#contact" variant="primary" className="!py-2 !px-4 text-sm">
+          <ButtonCTA href="#contact" variant="primary" className="!py-2 !px-5 text-sm shadow-blue-500/20">
             {t.nav.contact}
           </ButtonCTA>
         </div>
