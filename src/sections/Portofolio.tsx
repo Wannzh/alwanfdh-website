@@ -7,9 +7,9 @@ export default function Portofolio() {
   const { t } = useLanguage();
 
   const projectImages = [
-    "https://placehold.co/600x400/1e293b/FFF?text=ZakatNow+Dashboard",
-    "https://placehold.co/600x400/0f172a/FFF?text=LocoBooking+API+Swagger",
-    "https://github.com/user-attachments/assets/bd965caf-84b6-4772-846f-fcf7abe6ce60",
+    "https://res.cloudinary.com/dimtuwrap/image/upload/v1764886718/ZakatNow_fbbjoh.png",
+    "https://res.cloudinary.com/dimtuwrap/image/upload/v1764885771/Locobooking_pbfqq4.jpg",
+    "https://res.cloudinary.com/dimtuwrap/image/upload/v1764886600/Cover_Wanflix_pyn383.png",
     "https://placehold.co/600x400/064e3b/FFF?text=GedeClimb"
   ];
 
