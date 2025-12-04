@@ -122,7 +122,8 @@ export const translations = {
       title: "Siap Mulai?",
       desc: "Diskusi gratis, tanpa komitmen.",
       btn_wa: "Chat WhatsApp",
-      btn_email: "Kirim Email"
+      btn_email: "Kirim Email",
+      note: "Balasan biasanya dalam 24 jam kerja."
     },
     footer: {
       tagline: "Membangun solusi digital profesional untuk bisnis modern.",
@@ -255,7 +256,8 @@ export const translations = {
       title: "Ready to Start?",
       desc: "Free consultation, no commitment required.",
       btn_wa: "Chat on WhatsApp",
-      btn_email: "Send Email"
+      btn_email: "Send Email",
+      note: "Reply usually within 24 business hours."
     },
     footer: {
       tagline: "Professional digital solutions for modern businesses.",
