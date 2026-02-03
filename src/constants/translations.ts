@@ -60,11 +60,11 @@ export const translations = {
           link_repo: "https://github.com/wannzh/zakatNow-app"
         },
         {
-          title: "LocoBooking API",
-          desc: "Backend API untuk sistem pemesanan tiket dengan autentikasi dan dokumentasi API profesional.",
-          tags: ["Java", "Spring Security", "MySQL", "Swagger"],
-          link_demo: "#",
-          link_repo: "https://github.com/wannzh/LocoBooking-API"
+          title: "Greeceri Store",
+          desc: "Platform e-commerce full-stack untuk belanja groceries segar. Dibangun dengan React + Vite di frontend dan Java Spring Boot di backend. Terintegrasi payment gateway Xendit dan Google OAuth untuk autentikasi seamless.",
+          tags: ["React", "Spring Boot", "PostgreSQL", "Xendit API", "Google OAuth"],
+          link_demo: "https://www.greeceri.store/",
+          link_repo: "https://github.com/Wannzh/greeceri-store-fe.git"
         },
         {
           title: "WanFlix",
@@ -74,11 +74,11 @@ export const translations = {
           link_repo: "https://github.com/Wannzh/PROJECT-WISHLIST-MOVIE"
         },
         {
-          title: "GedeClimb Reserve",
-          desc: "Sistem reservasi pendakian berbasis CLI dengan struktur data kompleks.",
-          tags: ["C", "File System", "Data Structure"],
-          link_demo: "#",
-          link_repo: "https://github.com/wannzh/GedeClimb"
+          title: "Mobile Store",
+          desc: "Aplikasi e-commerce single-page dengan React Hooks untuk state management dan arsitektur component-based yang clean.",
+          tags: ["React", "Vite", "JavaScript", "Tailwind CSS"],
+          link_demo: "https://mobile-store.alwanfdh.my.id",
+          link_repo: "https://github.com/Wannzh/uts-react-fundamental.git"
         }
       ]
     },
@@ -116,7 +116,7 @@ export const translations = {
       desc1: "Halo! Saya adalah pengembang perangkat lunak full-stack dengan spesialisasi dalam membangun aplikasi web yang cepat, aman, dan dapat diandalkan.",
       desc2: "Meskipun masih muda, saya memiliki pengalaman mendalam dalam teknologi Java (Spring Boot) dan React. Saya tidak hanya menulis kode, tetapi juga memikirkan bagaimana teknologi tersebut dapat memecahkan masalah bisnis Anda secara efektif.",
       skills_title: "Keahlian Teknis Utama:",
-      skills_list: ["HTML", "CSS","React", "TypeScript", "Tailwind CSS", "Spring Boot", "Java", "Javascript", "PHP", "C", "C++", "PostgreSQL", "MySQL"]
+      skills_list: ["HTML", "CSS", "React", "TypeScript", "Tailwind CSS", "Spring Boot", "Java", "Javascript", "PHP", "C", "C++", "PostgreSQL", "MySQL"]
     },
     contact: {
       title: "Siap Mulai?",
@@ -194,11 +194,11 @@ export const translations = {
           link_repo: "https://github.com/wannzh/zakatNow-app"
         },
         {
-          title: "LocoBooking API",
-          desc: "Backend API for a train ticket system with secure authentication and complete API documentation.",
-          tags: ["Java", "Spring Security", "MySQL", "Swagger"],
-          link_demo: "#",
-          link_repo: "https://github.com/wannzh/LocoBooking-API"
+          title: "Greeceri Store",
+          desc: "A complete full-stack e-commerce platform for fresh grocery shopping. Built with React + Vite frontend and Java Spring Boot backend. Features Xendit payment gateway and Google OAuth for seamless authentication.",
+          tags: ["React", "Spring Boot", "PostgreSQL", "Xendit API", "Google OAuth"],
+          link_demo: "https://www.greeceri.store/",
+          link_repo: "https://github.com/Wannzh/greeceri-store-fe.git"
         },
         {
           title: "WanFlix",
@@ -208,11 +208,11 @@ export const translations = {
           link_repo: "https://github.com/Wannzh/PROJECT-WISHLIST-MOVIE"
         },
         {
-          title: "GedeClimb Reserve",
-          desc: "CLI-based booking system using advanced data structures and file handling techniques.",
-          tags: ["C", "File System", "Data Structures"],
-          link_demo: "#",
-          link_repo: "https://github.com/wannzh/GedeClimb"
+          title: "Mobile Store",
+          desc: "Single-page e-commerce application built with React Hooks for state management and clean component-based architecture.",
+          tags: ["React", "Vite", "JavaScript", "Tailwind CSS"],
+          link_demo: "https://mobile-store.alwanfdh.my.id",
+          link_repo: "https://github.com/Wannzh/uts-react-fundamental.git"
         }
       ]
     },
@@ -250,7 +250,7 @@ export const translations = {
       desc1: "Hello! I am a full-stack software developer specializing in building fast, secure, and reliable web applications.",
       desc2: "Despite my age, I possess deep expertise in Java (Spring Boot) and React technologies. I don't just write code; I strategize on how technology can effectively solve your business problems.",
       skills_title: "Core Technical Skills:",
-      skills_list: ["HTML", "CSS","React", "TypeScript", "Tailwind CSS", "Spring Boot", "Java", "Javascript", "PHP", "C", "C++", "PostgreSQL", "MySQL"]
+      skills_list: ["HTML", "CSS", "React", "TypeScript", "Tailwind CSS", "Spring Boot", "Java", "Javascript", "PHP", "C", "C++", "PostgreSQL", "MySQL"]
     },
     contact: {
       title: "Ready to Start?",
