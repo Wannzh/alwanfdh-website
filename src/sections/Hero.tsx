@@ -31,8 +31,8 @@ export default function Hero() {
         <div className="relative">
           <div className="absolute inset-0 bg-blue-200 rounded-full blur-3xl opacity-30 animate-pulse"></div>
           <img
-            src="https://placehold.co/600x600/e2e8f0/1e293b?text=Foto+Alwan"
-            alt="Alwan Fadhlurrohman"
+            src="/assets/fp.png"
+            alt="Muhamad Alwan Fadhlurrohman"
             className="relative z-10 w-full rounded-2xl shadow-2xl rotate-3 hover:rotate-0 transition-all duration-500"
           />
         </div>

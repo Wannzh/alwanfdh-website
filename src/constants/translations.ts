@@ -116,7 +116,7 @@ export const translations = {
       desc1: "Halo! Saya adalah pengembang perangkat lunak full-stack dengan spesialisasi dalam membangun aplikasi web yang cepat, aman, dan dapat diandalkan.",
       desc2: "Meskipun masih muda, saya memiliki pengalaman mendalam dalam teknologi Java (Spring Boot) dan React. Saya tidak hanya menulis kode, tetapi juga memikirkan bagaimana teknologi tersebut dapat memecahkan masalah bisnis Anda secara efektif.",
       skills_title: "Keahlian Teknis Utama:",
-      skills_list: ["React", "TypeScript", "Tailwind CSS", "Spring Boot", "Java", "PHP", "C", "C++", "PostgreSQL", "MySQL"]
+      skills_list: ["HTML", "CSS","React", "TypeScript", "Tailwind CSS", "Spring Boot", "Java", "Javascript", "PHP", "C", "C++", "PostgreSQL", "MySQL"]
     },
     contact: {
       title: "Siap Mulai?",
@@ -250,7 +250,7 @@ export const translations = {
       desc1: "Hello! I am a full-stack software developer specializing in building fast, secure, and reliable web applications.",
       desc2: "Despite my age, I possess deep expertise in Java (Spring Boot) and React technologies. I don't just write code; I strategize on how technology can effectively solve your business problems.",
       skills_title: "Core Technical Skills:",
-      skills_list: ["React", "TypeScript", "Tailwind CSS", "Spring Boot", "Java", "PHP", "C", "C++", "PostgreSQL", "MySQL"]
+      skills_list: ["HTML", "CSS","React", "TypeScript", "Tailwind CSS", "Spring Boot", "Java", "Javascript", "PHP", "C", "C++", "PostgreSQL", "MySQL"]
     },
     contact: {
       title: "Ready to Start?",
