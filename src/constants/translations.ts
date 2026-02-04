@@ -319,7 +319,7 @@ export const translations = {
           tags: ["Java 21", "Spring Boot", "Spring Data JPA", "Spring Security", "MySQL", "Maven", "React.js", "Axios", "Tailwind CSS", "React Router DOM", "Vite"],
           link_demo: "#",
           link_repo: "#",
-          image: "https://placehold.co/1200x675/0f172a/FFFFFF?text=DigiLib"
+          image: "https://res.cloudinary.com/dimtuwrap/image/upload/v1770168289/DigiLib_-_Digital_Library_System_Banner_s3q2mn.png"
         },
         {
           title: "QuickPOS - Point of Sale System",
@@ -328,7 +328,7 @@ export const translations = {
           tags: ["Python 3.10+", "FastAPI", "HTML", "CSS", "Jinja2 Templates", "Lucide Icons"],
           link_demo: "#",
           link_repo: "#",
-          image: "https://placehold.co/1200x675/0f172a/FFFFFF?text=QuickPOS"
+          image: "https://res.cloudinary.com/dimtuwrap/image/upload/v1770167516/QuickPOS_-_Point_of_Sale_Banner_emnrdo.png"
         },
         {
           title: "ZakatNow",
@@ -355,7 +355,7 @@ export const translations = {
           tags: ["HTML", "CSS", "API", "JavaScript"],
           link_demo: "https://wanflix.pages.dev/",
           link_repo: "https://github.com/Wannzh/PROJECT-WISHLIST-MOVIE",
-          image: "https://res.cloudinary.com/dimtuwrap/image/upload/v1764886600/Cover_Wanflix_pyn383.png"
+          image: "https://res.cloudinary.com/dimtuwrap/image/upload/v1770166993/WanFlix_Banner_kkan5w.png"
         },
         {
           title: "Mobile Store",
