@@ -14,9 +14,9 @@ export default function About() {
             {/* Dekorasi Background */}
             <div className="absolute inset-0 bg-blue-600 rounded-2xl rotate-3 opacity-20 group-hover:rotate-6 transition-all duration-500"></div>
             <img 
-              src="https://placehold.co/600x400/1e293b/FFFFFF?text=Coding+Workspace" 
-              alt="Workspace" 
-              className="relative z-10 w-full rounded-2xl shadow-xl border border-slate-100 object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              src="/assets/fp.png" 
+              alt="Muhamad Alwan Fadhlurrohman" 
+              className="relative z-10 w-full rounded-2xl shadow-xl border border-slate-100 object-cover"
             />
           </div>
           

@@ -29,6 +29,7 @@ export default function Navbar() {
   const navLinks = [
     ["about", t.nav.about],
     ["services", t.nav.services],
+    ["seo", t.nav.seo],
     ["workflow", t.nav.workflow],
     ["portfolio", t.nav.portfolio],
     ["pricing", t.nav.pricing],
@@ -50,7 +51,7 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.slice(0, 4).map(([key, label]) => (
+            {navLinks.slice(0, 5).map(([key, label]) => (
               <a
                 key={key}
                 href={`#${key}`}

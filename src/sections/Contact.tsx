@@ -4,6 +4,8 @@ import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
   const { t } = useLanguage();
+  const waMessage = encodeURIComponent(t.contact.wa_template);
+  const waLink = `https://wa.me/6285117072750?text=${waMessage}`;
 
   return (
     <section
@@ -22,19 +24,21 @@ export default function Contact() {
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <ButtonCTA
-              href="https://wa.me/6285117072750"
+              href={waLink}
               className="bg-green-500 hover:bg-green-600 flex items-center justify-center gap-3 py-3 px-6"
             >
               <FaWhatsapp /> {t.contact.btn_wa}
             </ButtonCTA>
 
-            <ButtonCTA
-              href="mailto:muhamad@alwanfdh.my.id"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-gray-900 flex items-center justify-center gap-3 py-3 px-6"
-            >
-              <FaEnvelope /> {t.contact.btn_email}
-            </ButtonCTA>
+            <div className="flex flex-col items-center">
+              <ButtonCTA
+                href="mailto:muhamad@alwanfdh.my.id"
+                variant="outline"
+                className="border-slate-500 text-slate-300 hover:border-slate-300 hover:text-white hover:bg-slate-800/60 flex items-center justify-center gap-3 py-3 px-6"
+              >
+                <FaEnvelope /> {t.contact.btn_email}
+              </ButtonCTA>
+            </div>
           </div>
 
           <p className="text-gray-400 text-sm mt-4">{t.contact.note}</p>

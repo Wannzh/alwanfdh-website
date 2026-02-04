@@ -1,17 +1,11 @@
 import SectionTitle from "../components/SectionTitle";
-import ButtonCTA from "../components/ButtonCTA";
 import { useLanguage } from "../context/LanguageContext";
-import { FaGithub, FaExternalLinkAlt, FaCode } from "react-icons/fa";
+import { FaExternalLinkAlt, FaCode } from "react-icons/fa";
 
 export default function Portofolio() {
   const { t } = useLanguage();
-
-  const projectImages = [
-    "https://res.cloudinary.com/dimtuwrap/image/upload/v1764886718/ZakatNow_fbbjoh.png",
-    "https://res.cloudinary.com/dimtuwrap/image/upload/v1770161386/Greeceri_Banner_hf6z0r.png",
-    "https://res.cloudinary.com/dimtuwrap/image/upload/v1764886600/Cover_Wanflix_pyn383.png",
-    "https://res.cloudinary.com/dimtuwrap/image/upload/v1770162580/Mobile_Store_Banner_vgnbft.png",
-  ];
+  const fallbackImage =
+    "https://placehold.co/1200x675/0f172a/FFFFFF?text=Project+Preview";
 
   return (
     <section id="portfolio" className="py-24 bg-white">
@@ -30,7 +24,7 @@ export default function Portofolio() {
               {/* Image Container with Overlay */}
               <div className="relative overflow-hidden aspect-video bg-slate-100">
                 <img
-                  src={projectImages[index]}
+                  src={project.image || fallbackImage}
                   alt={project.title}
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
@@ -47,15 +41,6 @@ export default function Portofolio() {
                       <FaExternalLinkAlt />
                     </a>
                   )}
-                  <a
-                    href={project.link_repo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-white text-slate-900 rounded-full hover:bg-slate-800 hover:text-white transition-colors"
-                    title="View Code"
-                  >
-                    <FaGithub className="text-xl" />
-                  </a>
                 </div>
               </div>
 
@@ -68,8 +53,11 @@ export default function Portofolio() {
                   <FaCode className="text-slate-300 text-xl hidden md:block" />
                 </div>
 
-                <p className="text-slate-600 mb-4 leading-relaxed text-sm flex-1">
+                <p className="text-slate-600 mb-3 leading-relaxed text-sm flex-1">
                   {project.desc}
+                </p>
+                <p className="text-slate-500 text-sm mb-4 border-l-2 border-blue-100 pl-3">
+                  {project.impact}
                 </p>
 
                 {/* Tags */}
@@ -96,28 +84,10 @@ export default function Portofolio() {
                       <FaExternalLinkAlt className="text-xs" /> Live Demo
                     </a>
                   )}
-                  <a
-                    href={project.link_repo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex items-center justify-center gap-2 py-2.5 px-4 bg-slate-800 text-white text-sm font-semibold rounded-lg hover:bg-slate-900 transition-colors ${project.link_demo === "#" ? "flex-1" : ""}`}
-                  >
-                    <FaGithub /> Code
-                  </a>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-16">
-          <ButtonCTA
-            href="https://github.com/wannzh"
-            variant="outline"
-            className="border-slate-300 text-slate-600 hover:border-slate-900 hover:text-slate-900"
-          >
-            <FaGithub className="mr-2 inline" /> Lihat Proyek Lainnya di GitHub
-          </ButtonCTA>
         </div>
       </div>
     </section>
